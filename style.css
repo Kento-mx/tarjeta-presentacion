@@ -15,7 +15,6 @@ html{
     align-items: center;
     position: relative;
     margin-top: 20vh;
-    /* border: 2px blue dotted; */
 }
 
 .box {
@@ -23,7 +22,6 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* border: 1px black solid; */
 }
 
 .title-box {
@@ -40,16 +38,18 @@ html{
     border: 1px #03071e solid;
     border-radius: 10px 10px 80px 80px;
     padding: 10px;
-    width: 500px;
+    width: 50rem;
 }
 
 .title-box img{
     display: flex;
+    position: relative;
     width: 25%;
 }
 
 .title-box p:hover{
     color: #590d22;
+    cursor: url(./images/bola-zen.png), auto;
 }
 
 .content {
@@ -59,23 +59,24 @@ html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
     font-size: 1.8rem;
     color: whitesmoke;
-    width: 900px;
+    width: 100%;
     background-color: #590d22;
     padding: 25px 85px;
     border: 1px white solid;
     border-radius: 25px;
 }
 
-.content .ow{
+.title-box .ow{
     position: absolute;
-    top: 20px;
-    right: 690px;
-    width: 80px;
+    top: 1%;
+    right: 1%;
+    width: 8rem;
 }
 
-.content .ow2{
+.title-box .ow2{
     position: absolute;
-    top: 20px;
-    right: 1105px;
-    width: 80px;
+    top: 1%;
+    left: 1%;
+    width: 8rem;
 }
+
