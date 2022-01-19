@@ -179,21 +179,21 @@ html{
     align-items: center;
     text-decoration: none;
     list-style: none;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     color: #590d22;
     font-weight: bolder;
     background-color: #a5a58d;
     padding: 10px;
     border-radius: 10px 10px 30px 30px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 95%;
 }
 
 .submenu__item__click__item:hover {
     cursor: pointer;
     background-color: #363131;
     color: whitesmoke;
-    width: 85%;
+    width: 110%;
     transition: all 500ms ease;
 }
 
@@ -203,6 +203,8 @@ html{
     list-style: none;
     align-items: center;
     color: #590d22;
+    width: 100%;
+    
 }
 
 .submenu__item__click__item a:hover{
