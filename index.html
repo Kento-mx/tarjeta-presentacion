@@ -6,21 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta</title>
     <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <main>
+        
         <div class="patern">
             <div class="box">
-                <div class="title-box">
-                    <img src="./images/alan.jpg" alt="Imagen de perfil">
+                <div class="title-box animate-bg">
+                    <div class="images">
+                        <img src="./images/alan2.jpg" alt="Foto" class="animate__animated animate__bounce animate__delay-1s">
+                        <div class="iconos">
+                            <img src="./images/css.png" alt="Icono de CSS" id="cssLeft">
+                            <img src="./images/html.png" alt="Icono de HTML" id="htmlTop">
+                            <img src="./images/js.png" alt="Icono de JS">
+                        </div>
+                        <img src="./images/alan.jpg" alt="Imagen de perfil" class="animate__animated animate__bounce animate__delay-1s">
+                    </div>
                     <p>ALAN LEON. "KENTO"</p>
-                    <img src="./images/overwatch--v1.png" alt="Icono de OW" class="ow">
-                    <img src="./images/overwatch--v1.png" alt="Icono de OW" class="ow2">
                 </div>
                 <div class="content">
-                    <p> Hola! Mi nombre es Alan, aunque tambien puedes decirme Kento.</p>
-                    <p>Soy un apasionado a la tecnologia y a los videojuegos.</p>
-                    <p>Estoy estudiando Ing. en Computacion, tambien Diseño Web, pero por mi cuenta.</p>
+                    <div class="menu">
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <h2>SOBRE MI</h2>
+                                <ul class="submenu__item__click">
+                                    <li class="submenu__item__click__item">
+                                        <p>Soy un estudiante aficionado a la tecnologia y a los videojuegos.
+                                        Busco ser un desarrollador web enfocado al <strong>FRONT-END</strong> y diseñar diferentes paginas. 
+                                        Las tecnologias que estoy aprendiendo y son de mi agrado son: HTML5, CSS y JavaScript.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="submenu__item">
+                                <h2>CONTACTO :D</h2>
+                                <ul class="submenu__item__click">
+                                    <li class="submenu__item__click__item" id="twitter">
+                                        <a href="https://twitter.com/kento_mx">
+                                        <img src="./images/twitter.png">
+                                        @kento_mx
+                                        </a>
+                                    </li>
+                                    <li class="submenu__item__click__item">
+                                        <img src="./images/gmail.png">
+                                        <span>alanferleon@gmail.com</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

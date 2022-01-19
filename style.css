@@ -6,7 +6,7 @@
 
 html{
     font-size: 62.5%;
-    background-image: url(./images/montanas-minimalista-arte-low-poly_3840x2160_xtrafondos.com.jpg);
+    background-color: #121212;
 }
 
 .patern {
@@ -23,6 +23,7 @@ html{
     flex-direction: column;
 }
 
+/*Parte alta del box*/
 .title-box {
     display: flex;
     flex-direction: column;
@@ -37,45 +38,183 @@ html{
     border: 1px #03071e solid;
     border-radius: 10px 10px 80px 80px;
     padding: 10px;
-    width: 50rem;
+    width: 62rem;
 }
 
-.title-box img{
+.title-box p {
+    font-weight:bolder;
+    color: #590d22;
+}
+
+/* Borde animado del title-box*/
+.animate-bg:before, .animate-bg:after {
+    content: '';
+	position: absolute;
+    top: -5px;
+	background: linear-gradient(120deg, #12be4c, #8d01a0, #031ba5,#c20303,  
+	#590d22, #fb0094,#ff6600, #04c2e4);
+	background-size: 500%;
+    width: 102%;
+    height: 105%;
+	z-index: -1;
+    border-radius: 10px 10px 80px 80px;
+	animation: BGgradient 35s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 250%;
+	}
+	50% {
+		background-position: 250% 0%;
+	}
+	100% {
+		background-position: 0% 500%;
+	}
+}
+
+/* Fotografias de perfil */
+.images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.images img{
+    width: 22%;
+}
+
+/*Iconos del centro */
+.images .iconos {
     display: flex;
     position: relative;
-    width: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    top: 22%;
 }
 
-.title-box p:hover{
-    color: #590d22;
-    cursor: url(./images/bola-zen.png), auto;
+.images .iconos img{
+    width: 40%;
+    margin: 0 -8px 0 -8px;
 }
 
+.images #htmlTop{
+    display: flex;
+    position: absolute;
+    width: 32%;
+    top: -22%;
+}
+
+.images #cssLeft {
+    width: 38%;
+}
+
+
+/*Caja con menu*/
 .content {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    font-size: 1.8rem;
     color: whitesmoke;
-    width: 100%;
     background-color: #590d22;
-    padding: 25px 85px;
-    border: 1px white solid;
+    padding: 25px 50px;
+    border: 4px white solid;
     border-radius: 25px;
+    width: 55%;
 }
 
-.title-box .ow{
-    position: absolute;
-    top: 1%;
-    right: 1%;
-    width: 8rem;
+.menu {
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    border: 2px white solid;
 }
 
-.title-box .ow2{
-    position: absolute;
-    top: 1%;
-    left: 1%;
-    width: 8rem;
+.menu .submenu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu .submenu .submenu__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 10px 20px;
+    padding: 5px;
+}
+
+/* Texto Strong */
+.submenu__item__click .submenu__item__click__item strong {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-decoration-line: underline;
+}
+
+.menu .submenu .submenu__item h2{
+    text-decoration: none;
+    color: whitesmoke;
+    -webkit-text-stroke: 1px black;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #a5a58d;
+    border-radius: 20px;
+}
+
+.submenu__item__click {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Box sobre el sub menu */
+.submenu__item__click__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 2.1rem;
+    color: #590d22;
+    font-weight: bolder;
+    background-color: #a5a58d;
+    padding: 10px;
+    border-radius: 10px 10px 30px 30px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.submenu__item__click__item:hover {
+    cursor: pointer;
+    background-color: #363131;
+    color: whitesmoke;
+    width: 85%;
+    transition: all 500ms ease;
+}
+
+.submenu__item__click__item a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    color: #590d22;
+}
+
+.submenu__item__click__item a:hover{
+    color: #04c2e4;
+    padding: 10px;
+    margin: -12px -8px -12px -8px;
+    transition: all 300ms ease;
+}
+
+/* Control de iconos en Contacto */
+.submenu__item__click__item img{
+    width: 10%;
+    margin: 0 5px;
 }
 
